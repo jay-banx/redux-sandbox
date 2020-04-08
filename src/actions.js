@@ -6,8 +6,8 @@ const dec = () => {
   return { type: "DEC" };
 };
 
-const rnd = (payload) => {
-  return { type: "RND", payload };
+const rnd = () => {
+  return { type: "RND", payload: Math.floor(Math.random() * 10) + 1 };
 };
 
 export { inc, dec, rnd };
